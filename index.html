@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="container-cabecalho">
+          <div class="cabecalho">
+            <h1 class="page-title">Conversor de moedas</h1>
+          </div>
+        </header>
+        <div class="subcontainer">
+          <p class="page-subtitle">
+            Descubra os valores em U$ ou €
+          </p>
+          <label for="moeda">Insira o valor em R$</label><br>
+          <input type="number" id="valor" size="2" /><br>
+          <button type="submit" onclick="ConverterReais()" class="dolar">Converter U$</button>
+          <button type="submit" onclick="ConverterEuro()" class="euro">Converter €</button>
+          <h2 id="valorConvertido"></h2>
+        </div>
+      </div>
+</body>
+</html>
